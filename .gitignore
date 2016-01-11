@@ -1,0 +1,4 @@
+# .gitignore
+
+/id_buildfarm
+/id_buildfarm.pub
