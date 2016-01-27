@@ -1,6 +1,6 @@
 # nixpkgs-ci.nix
 
-{ supportedSystems ? [/* "i686-linux" */ "x86_64-linux"] }:
+{ supportedSystems ? ["i686-linux" "x86_64-linux"] }:
 
 with (import <nixpkgs/pkgs/top-level/release-lib.nix> { inherit supportedSystems; });
 
