@@ -71,6 +71,8 @@ in
     '';
   };
 
+  users.users.hydra-www.uid = config.ids.uids.hydra-www;
+  users.users.hydra-queue-runner.uid = config.ids.uids.hydra-queue-runner;
   users.users.hydra.uid = config.ids.uids.hydra;
   users.groups.hydra.gid = config.ids.gids.hydra;
 
