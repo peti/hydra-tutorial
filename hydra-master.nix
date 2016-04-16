@@ -40,6 +40,7 @@ in
     notificationSender = "hydra@example.org";
     port = 8080;
     extraConfig = "binary_cache_secret_key_file = /etc/nix/hydra.example.org-1/secret";
+    buildMachinesFiles = [ "/etc/nix/machines" ];
   };
 
   services.postgresql = {
