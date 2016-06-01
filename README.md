@@ -1,6 +1,9 @@
 How to set up your own Hydra Server
 ===================================
 
+For those who enjoy watching technical screencasts, there's also a video about
+this subject available at https://www.youtube.com/watch?v=RXV0Y5Bn-QQ.
+
 This repository contains a complex'ish example configuration for the Nix-based
 continuous build system [Hydra](http://nixos.org/hydra/) that new users can use
 to get started. The file [`hydra-common.nix`](hydra-common.nix) defines basic
