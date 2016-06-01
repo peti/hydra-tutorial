@@ -71,7 +71,7 @@ If those pre-conditions are met, follow these steps:
     nixops ssh hydra -- nix-channel --update
     ~~~~~
 
-If all these steps completed without errors, then `nixops info` will tell you
+If all these steps completed without errors, then `nixops info -d hydra` will tell you
 the IP address of the new machine(s). For example, let's say that the `hydra`
 machine got assigned the address `192.168.56.101`. Then go to
 `http://192.168.56.101:8080/` to access the web front-end and sign in with the
