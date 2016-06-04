@@ -2,14 +2,9 @@
 
 { config, pkgs, ... }:
 
-let
-
-  hydraSrc = builtins.fetchTarball https://github.com/nixos/hydra/archive/master.tar.gz;
-
-in
 {
 
-  imports = [ ./hydra-common.nix "${hydraSrc}/hydra-module.nix" ];
+  imports = [ ./hydra-common.nix ];
 
   assertions = pkgs.lib.singleton {
     assertion = pkgs.system == "x86_64-linux";
